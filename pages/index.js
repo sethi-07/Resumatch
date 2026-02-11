@@ -20,7 +20,7 @@ export default function Home() {
     try {
       setLoading(true);
 
-      const res = await fetch("https://resumatch123.vercel.app/api/match", {
+      const res = await fetch("http://localhost:8000/api/match", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
