@@ -10,8 +10,8 @@ app = FastAPI()
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "https://resumatch-frontend-seven.vercel.app",  # No trailing slash!
-        "http://resumatch-frontend-seven.vercel.app",
+        "https://resumatch123.vercel.app",  # No trailing slash!
+        "http://resumatch123.vercel.app",
         "http://localhost:3000",  # For local development
         "http://localhost:3001",  # Alternative local port
     ],
