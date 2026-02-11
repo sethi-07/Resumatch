@@ -9,7 +9,12 @@ import re
 app = FastAPI()
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://resumatch-frontend-seven.vercel.app/"],
+    allow_origins=[
+        "https://resumatch-frontend-seven.vercel.app",  # No trailing slash!
+        "http://resumatch-frontend-seven.vercel.app",
+        "http://localhost:3000",  # For local development
+        "http://localhost:3001",  # Alternative local port
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
