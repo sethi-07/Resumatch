@@ -27,6 +27,7 @@ textarea {
   scrollbar-width: thin;
   scrollbar-color: #0d9488 #1f2937;
 }
+
 body {
   @apply bg-gradient-to-br from-teal-950 to-black dark:from-black dark:to-teal-950;
   min-height: 100vh;
