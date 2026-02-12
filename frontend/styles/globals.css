@@ -5,6 +5,7 @@ html {
     background-color 0.2s ease,
     color 0.2s ease;
 }
+
 /* Chrome, Edge, Safari */
 textarea::-webkit-scrollbar {
   width: 6px;
@@ -15,7 +16,7 @@ textarea::-webkit-scrollbar-track {
 }
 
 textarea::-webkit-scrollbar-thumb {
-  background-color: #0d9488; /* teal-600 */
+  background-color: #09615a; /* teal-600 */
   border-radius: 8px;
 }
 
@@ -27,4 +28,8 @@ textarea::-webkit-scrollbar-thumb:hover {
 textarea {
   scrollbar-width: thin;
   scrollbar-color: #0d9488 #1f2937;
+}
+body {
+  @apply bg-gradient-to-br from-teal-950 to-black dark:from-black dark:to-teal-950;
+  min-height: 100vh;
 }
